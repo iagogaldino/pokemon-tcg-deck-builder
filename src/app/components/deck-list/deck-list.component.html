@@ -1,0 +1,19 @@
+<igx-navbar [title]="title"></igx-navbar>
+<div class="flex flex-col md:flex-row">
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-1"
+  >
+    <div
+      class="p-4"
+      *ngFor="let card of appService.cardsList; let i = index"
+      [ngClass]="{ box: checkItemSelected(card) }"
+    >
+      <app-card (click)="onClickCard(card)" [cardData]="card"></app-card>
+      <div class="ffp" *ngIf="checkItemSelected(card)">{{card.numberadd}}</div>
+    </div>
+  </div>
+
+  <div>
+    <app-deck-info></app-deck-info>
+  </div>
+</div>

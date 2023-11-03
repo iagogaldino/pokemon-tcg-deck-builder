@@ -1,0 +1,32 @@
+<div class="content-wrap" igxLayout>
+  <igx-nav-drawer
+    id="navigation"
+    #drawer
+    [isOpen]="true"
+    [pin]="true"
+    [pinThreshold]="0"
+  >
+    <ng-template igxDrawer>
+      <nav>
+        <span igxDrawerItem [isHeader]="true">Menu</span>
+
+        <span
+          *ngFor="let item of navItems"
+          igxDrawerItem
+          igxRipple
+          (click)="navigate(item)"
+        >
+          <igx-icon family="material">{{ item.name }}</igx-icon>
+          <span>{{ item.text }}</span>
+          <span *ngIf="item.deckUserSavesLen! >= 0"
+            >({{ item.deckUserSavesLen }})</span
+          >
+        </span>
+      </nav>
+    </ng-template>
+  </igx-nav-drawer>
+
+  <main igxFlex>
+    <router-outlet></router-outlet>
+  </main>
+</div>

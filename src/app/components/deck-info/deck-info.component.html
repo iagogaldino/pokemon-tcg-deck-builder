@@ -1,0 +1,79 @@
+<div class="hidden-div">
+  <div class="info2"></div>
+  <div class="info text-cemter" style="display: flex">
+    <div class="" style="width: 100%">
+      <div class="pt-5 ipok">
+        <img
+          src="/assets/images/pokemon.png"
+          alt="Imagem 1"
+          class="w-16 h-16"
+        />
+        <p>
+          {{ getSuperType(appService.selectedCards, supertypesEnum.POKEMON) }}
+        </p>
+      </div>
+      <div class="mt-2">
+        <div class="pokemon-trainer"></div>
+        <p>
+          {{ getSuperType(appService.selectedCards, supertypesEnum.TRAINER) }}
+        </p>
+      </div>
+      <div class="mt-2 pt-5 ipok">
+        <img
+          src="/assets/images/cards-cors.png"
+          alt="Imagem 3"
+          style="width: 77px; height: 70px"
+        />
+        <p>
+          {{ getColors(appService.selectedCards) }}
+        </p>
+      </div>
+
+      <button
+        class="button mt-3"
+        (click)="checkAmountCards() ? alert.open() : alertAmmountCards.open()"
+      >
+        {{ appService.typeFlow == "edit" ? "Salvar baralho" : "Criar baralho" }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<igx-dialog
+  #alert
+  [closeOnOutsideSelect]="true"
+  title="Salvar baralho"
+  (leftButtonSelect)="alert.close()"
+>
+  <igx-input-group [formGroup]="form">
+    <label igxLabel for="deckName">Nome do baralho</label>
+    <input igxInput id="deckName" formControlName="deckName" type="text" />
+  </igx-input-group>
+  <div igxDialogActions>
+    <button
+      igxButton
+      *ngIf="appService.typeFlow == 'edit'"
+      (click)="[onSave(), alert.close()]"
+      [disabled]="form.invalid"
+    >
+      Salvar
+    </button>
+    <button
+      igxButton
+      *ngIf="appService.typeFlow == 'add'"
+      (click)="[onCreate(), alert.close()]"
+      [disabled]="form.invalid"
+    >
+      Criar
+    </button>
+  </div>
+</igx-dialog>
+
+<igx-dialog
+  #alertAmmountCards
+  title="Ops!"
+  message="O baralho deve conter entre 24 e 60 cartas"
+  leftButtonLabel="OK"
+  (leftButtonSelect)="alertAmmountCards.close()"
+>
+</igx-dialog>

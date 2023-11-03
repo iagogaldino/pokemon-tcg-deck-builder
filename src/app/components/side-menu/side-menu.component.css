@@ -1,0 +1,35 @@
+.content-wrap {
+  display: flex;
+  height: 100vh;
+}
+
+main {
+  background-color: rgb(241, 241, 241);
+  height: 100%;
+  overflow: auto;
+  padding: 0px 0px 16px 0px;
+
+  width: 100%;
+  background: linear-gradient(180deg, #66bb66, #4aa74a);
+  background-image: url("/assets/images/bg3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h5 {
+  padding: 8px 0;
+}
+
+:host {
+  display: block;
+  height: calc(100% - 56px);
+}
+
+::ng-deep .igx-navbar {
+  background-color: red;
+  color: white;
+}
+
+::ng-deep .igx-nav-drawer__aside--normal {
+  background-image: url("/assets/images/bg3.png");
+}

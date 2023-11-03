@@ -1,0 +1,39 @@
+.box {
+  animation: swing 0.4s infinite;
+}
+
+.ffp {
+  background-color: rgb(238, 88, 121);
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: -30px;
+  margin-left: -13px;
+  border: 1px solid #e5e5e5;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 29px;
+  color: white;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0.7deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-0.7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

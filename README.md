@@ -1,27 +1,67 @@
-# PokemonTcgDeckBuilder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+# Pokémon TCG Deck Builder
 
-## Development server
+## Visão Geral
+O Pokémon TCG Deck Builder é uma aplicação web desenvolvida em Angular que permite aos jogadores criar e gerenciar seus próprios baralhos de Pokémon. A aplicação utiliza a API do Pokémon TCG para fornecer aos jogadores acesso às cartas disponíveis. Os principais recursos da aplicação incluem:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. **Seção Criar Novo Baralho:**
+   - Os jogadores podem selecionar entre 24 e 60 cartas para compor seus baralhos.
+   - Informações em tempo real sobre a quantidade de Pokémon e Treinadores no baralho são exibidas.
+   - Os jogadores podem definir um nome personalizado para o baralho.
+   - As cores das cartas no baralho são exibidas para ajudar os jogadores a manter o equilíbrio.
 
-## Code scaffolding
+2. **Seção Meus Baralhos:**
+   - Os jogadores podem visualizar uma lista de todos os baralhos que criaram.
+   - Eles têm a capacidade de editar a composição do baralho existente ou excluí-lo se desejarem.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Requisitos do Projeto
 
-## Build
+Certifique-se de que o ambiente de desenvolvimento atenda aos seguintes requisitos:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js e npm instalados.
+- Angular CLI instalado.
+- Conexão com a Internet para acessar a API do Pokémon TCG.
 
-## Running unit tests
+## Configuração do Projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Siga as etapas abaixo para configurar o projeto em sua máquina local:
 
-## Running end-to-end tests
+1. Clone este repositório:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```
+   git clone https://github.com/iagogaldino/pokemon-tcg-deck-builder.git
+   ```
 
-## Further help
+2. Navegue até o diretório do projeto:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```
+   cd pokemon-tcg-deck-builder
+   ```
+
+3. Instale as dependências:
+
+   ```
+   npm install
+   ```
+
+4. Execute a aplicação:
+
+   ```
+   ng serve
+   ```
+
+5. Abra seu navegador e acesse `http://localhost:4200/` para visualizar o projeto em execução.
+ 
+## Contribuição
+
+Se desejar contribuir para o projeto, sinta-se à vontade para abrir problemas, enviar solicitações de pull requests ou discutir melhorias.
+
+## Autores
+
+- Iago Delsuc
+
+## Agradecimentos
+
+Agradecemos à comunidade do Pokémon TCG por fornecer a API e aos contribuidores do projeto.
+
+Divirta-se montando seus baralhos de Pokémon!
