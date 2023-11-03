@@ -9,6 +9,8 @@ O Pokémon TCG Deck Builder é uma aplicação web desenvolvida em Angular que p
    - Informações em tempo real sobre a quantidade de Pokémon e Treinadores no baralho são exibidas.
    - Os jogadores podem definir um nome personalizado para o baralho.
    - As cores das cartas no baralho são exibidas para ajudar os jogadores a manter o equilíbrio.
+  ![creategame](https://github.com/iagogaldino/pokemon-tcg-deck-builder/assets/26775889/874f185b-893c-4682-9787-874514cdecc5)
+
 
 2. **Seção Meus Baralhos:**
    - Os jogadores podem visualizar uma lista de todos os baralhos que criaram.
