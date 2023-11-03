@@ -15,9 +15,10 @@ O Pokémon TCG Deck Builder é uma aplicação web desenvolvida em Angular que p
 
 2. **Seção Meus Baralhos:**
    - Os jogadores podem visualizar uma lista de todos os baralhos que criaram.
-   - Eles têm a capacidade de editar a composição do baralho existente ou excluí-lo se desejarem.
+  - Eles têm a capacidade de editar a composição do baralho existente ou excluí-lo se desejarem.
 
-     ![creategame](https://github.com/iagogaldino/pokemon-tcg-deck-builder/assets/26775889/d8b9a9d3-efce-43b4-9c33-14b5d34f26b7)
+ ![mmm](https://github.com/iagogaldino/pokemon-tcg-deck-builder/assets/26775889/665d200d-292a-4cd3-aa0d-524aa2ce03c2)
+
 
 ## Requisitos do Projeto
 
